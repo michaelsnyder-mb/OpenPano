@@ -42889,7 +42889,7 @@ namespace cimg_library_suffixed {
     }
 
     static void _load_inr_header(std::FILE *file, int out[8], float *const voxel_size) {
-      CImg<charT> item(1024), tmp1(64), tmp2(64);
+      CImg<charT> tmp1(64), tmp2(64);
       CImg<string> item;
       *item = *tmp1 = *tmp2 = 0;
       out[0] = std::fscanf(file,"%63s",item._data);
